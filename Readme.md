@@ -8,6 +8,17 @@ npm i
 npm start
 
 ```
-3. Click on the videos, they are clickable.
-4. If you want, put your video into the folder assets/  
+3. Put your video into the folder assets/
+4. Rename the video file (property **mp4**) according with data.json OR rename the property
+```
+"id": 2,
+"title": "Ellie Goulding - Burn (Leo Kalyan Remix)",
+"duration": 60,
+"sources": [{
+  "mp4": "Ellie Goulding - Burn (Leo Kalyan Remix).mp4"
+}],
+
+```
+
+4. Click on the videos, they are clickable.
 That's all.
