@@ -1,0 +1,55 @@
+<video #videoElem
+  (timeupdate)="enableControls(videoElem)"
+  height="528" autoplay
+  [src]="'assets/' + activeVideo.video.sources[0].mp4">
+  <source *ngFor="let source of activeVideo.video.sources" [src]="'assets/' + source.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+
+
+<div *ngIf="isLoaded" class="controls">
+  <div (click)="play(videoElem)" class="play">
+    <i *ngIf="!isPlayed" class="fa fa-play" aria-hidden="true"></i>
+    <i *ngIf="isPlayed" class="fa fa-pause" aria-hidden="true"></i>
+  </div>
+
+  <div (click)="videoElem.muted = !videoElem.muted" class="volume">
+    <i *ngIf="!videoElem.muted" class="fa fa-volume-up" aria-hidden="true"></i>
+    <i *ngIf="videoElem.muted" class="fa fa-volume-off" aria-hidden="true"></i>
+  </div>
+
+  <input #timeline
+    (change)="changeCurrTime(videoElem, timeline.value)"
+    type="range" min="0"
+    [max]="videoElem.duration"
+    [value]="videoElem.currentTime">
+
+  <div class="time">
+    <time>{{videoElem.currentTime | toDate}}</time>
+    &nbsp;&nbsp;
+    <time>{{videoElem.duration | toDate}}</time>
+  </div>
+
+  <div class="like">
+    <a [href]="activeVideo.video.socialLink.url">
+      <i class="fa fa-heart-o" aria-hidden="true"></i>
+      Add to favorits
+    </a>
+  </div>
+
+  <ul>
+    <div (click)="isDownloadLinksOpen = !isDownloadLinksOpen" class="download">
+      <i class="fa fa-download" aria-hidden="true"></i>
+      Download
+      <i class="fa fa-angle-down" aria-hidden="true"></i>
+    </div>
+    <div *ngIf="isDownloadLinksOpen">
+      <li *ngFor="let data of activeVideo.video.download">
+        <a [href]="data.url">
+          <span>{{data.title}}</span> {{data.fileSize}}
+        </a>
+      </li>
+    </div>
+  </ul>
+
+</div>

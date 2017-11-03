@@ -1,0 +1,43 @@
+div.profile-view {
+  margin: auto;
+  position: relative;
+  top: 0;
+  max-width: 940px;
+  height: 100%;
+
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  font-family: Ubuntu;
+}
+
+new-profiles {
+  flex-basis: 100%;
+  margin-bottom: 20px;
+}
+
+v-player {
+  flex-basis: 100%;
+}
+
+profile-card {
+  margin-top: 40px;
+  flex-basis: 100%;
+}
+
+profile-videos {
+  flex-basis: 100%;
+}
+
+@media only screen and (min-width: 955px) {
+  v-player {
+    flex-basis: 700px;
+  }
+  profile-card {
+    margin-top: 0px;
+    margin-left: 20px;
+    flex-basis: 220px;
+  }
+}

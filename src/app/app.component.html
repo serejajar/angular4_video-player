@@ -1,0 +1,20 @@
+<div *ngIf="!data">Loading content...</div>
+<div *ngIf="data" class="profile-view">
+  <new-profiles
+    *ngIf="data.newProfiles.isOpen"
+    [newProfiles]="data.newProfiles">
+  </new-profiles>
+
+  <v-player #vplayer
+    [activeVideo]="activeVideo">
+  </v-player>
+
+  <profile-card
+    [modelInfo]="data.modelInfo">
+  </profile-card>
+
+  <profile-videos
+    [videos]="data.videos"
+    [activeVideo]="activeVideo">
+  </profile-videos>
+</div>

@@ -1,0 +1,130 @@
+
+{
+	"newProfiles": {
+		"amount": 3,
+		"checkNowUrl": "http://test.url/"
+	},
+	"modelInfo": {
+		"id": 123,
+		"name": "User Name",
+		"yearStarted": "2008",
+		"age": 29,
+		"description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text for ages.",
+		"activities": [{
+			"id": 1,
+			"title": "Angular",
+			"url": "http://test.url/"
+		},
+		{
+			"id": 2,
+			"title": "Css",
+			"url": "http://test.url/"
+		},
+		{
+			"id": 3,
+			"title": "Html",
+			"url": "http://test.url/"
+		},
+		{
+			"id": 4,
+			"title": "NodeJS",
+			"url": "http://test.url/"
+		}]
+	},
+	"videos": [{
+		"id": 2,
+		"title": "Ellie Goulding - Burn (Leo Kalyan Remix)",
+		"duration": 60,
+		"sources": [{
+			"mp4": "Ellie Goulding - Burn (Leo Kalyan Remix).mp4"
+
+		}],
+		"download": [{
+			"title": "LQ",
+			"fileSize": "750 Mb",
+			"url": "http://clips.vorwaerts-gmbh.de/VfE_html5.mp4?q=240&download=1"
+		}, {
+			"title": "MQ",
+			"fileSize": "1262 Mb",
+			"url": "http://clips.vorwaerts-gmbh.de/VfE_html5.mp4?q=480&download=1"
+		}, {
+			"title": "HQ",
+			"fileSize": "1600 Mb",
+			"url": "http://clips.vorwaerts-gmbh.de/VfE_html5.mp4?q=720&download=1"
+		}],
+		"socialLink": {
+			"type": "facebook",
+			"url": "https://facebook.com/1"
+		}
+	},
+	{
+		"id": 1,
+		"title": "Bloodhound Gang - One Fierce Beer Coaster",
+		"duration": 60,
+		"sources": [{
+			"mp4": "Bloodhound Gang - The Bad Touch.mp4"
+		}],
+		"download": [
+		{
+			"title": "LQ",
+			"fileSize": "75 Mb",
+			"url": "http://clips.vorwaerts-gmbh.de/VfE_html5.mp4?2&q=240&download=1"
+		},
+		{
+			"title": "MQ",
+			"fileSize": "122 Mb",
+			"url": "http://clips.vorwaerts-gmbh.de/VfE_html5.mp4?2&q=480&download=1"
+		},
+		{
+			"title": "HQ",
+			"fileSize": "110 Mb",
+			"url": "http://clips.vorwaerts-gmbh.de/VfE_html5.mp4?2&q=720&download=1"
+		}],
+		"socialLink": {
+			"type": "facebook",
+			"url": "https://facebook.com/2"
+		}
+	},
+	{
+		"id": 3,
+		"title": "Korn - Last Legal Drug [Le Petit Mort]",
+		"duration": 60,
+		"sources": [{
+			"mp4": "Korn - Last Legal Drug [Le Petit Mort].mp4"
+		}],
+		"download": [{
+			"title": "LQ",
+			"fileSize": "155 Mb",
+			"url": "http://clips.vorwaerts-gmbh.de/VfE_html5.mp4?3&q=240&download=1"
+		}, {
+			"title": "MQ",
+			"fileSize": "345 Mb",
+			"url": "http://clips.vorwaerts-gmbh.de/VfE_html5.mp4?3&q=480&download=1"
+		}],
+		"socialLink": {
+			"type": "twitter",
+			"url": "https://twitter.com/3"
+		}
+	},
+	{
+		"id": 4,
+		"title": "Seven Lions - Keep It Close (feat. Kerli)",
+		"duration": 60,
+		"sources": [{
+			"mp4": "Seven Lions - Keep It Close (feat. Kerli).mp4"
+		}],
+		"download": [{
+			"title": "MQ",
+			"fileSize": "1220 Mb",
+			"url": "http://clips.vorwaerts-gmbh.de/VfE_html5.mp4?4&q=480&download=1"
+		}, {
+			"title": "HQ",
+			"fileSize": "2101 Mb",
+			"url": "http://clips.vorwaerts-gmbh.de/VfE_html5.mp4?4&q=720&download=1"
+		}],
+		"socialLink": {
+			"type": "instagram",
+			"url": "https://instagram.com/4"
+		}
+	}]
+}

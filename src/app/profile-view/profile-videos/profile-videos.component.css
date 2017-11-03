@@ -1,0 +1,46 @@
+div.profile-videos {
+  margin-top: 75px;
+}
+
+div.vieos-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  align-content: space-between;
+  justify-content: center;
+}
+
+span.header {
+  position: relative;
+  top: -20px;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: italic;
+  background-color: white;
+  z-index: 2;
+}
+
+hr {
+  margin-left: 40px;
+  z-index: 1;
+}
+
+div.video-card {
+  flex-basis: 220px;
+  margin: 0 5px 10px 5px;
+  width: 220px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  cursor: pointer;
+}
+
+div.video-card > img {
+  margin-bottom: 10px;
+}
+
+div.video-card > span {
+  font-size: 13px;
+  font-weight: bold;
+  white-space: nowrap;
+}
